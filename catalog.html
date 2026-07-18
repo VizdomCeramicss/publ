@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Catalog — Vizdom Ceramics</title>
+<meta name="description" content="Browse the full Vizdom Ceramics catalog: wash basins, water closets, bathtubs, faucets, shower sets and more.">
+<link rel="icon" href="images/logoo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Vizdom Ceramics" class="brand-logo">
+      <span class="brand-name sr-only">Vizdom Ceramics</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalog.html">Full Catalog</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#" data-wa-generic target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+</header>
+
+<main>
+  <section class="section container" style="padding-top:2.4rem">
+    <p class="eyebrow">Full Catalog</p>
+    <h1 style="font-size:clamp(1.8rem,3.2vw,2.6rem)">Every item, searchable</h1>
+    <p style="color:var(--color-ink-soft); max-width:60ch">Search by name or item number, or filter by category. Tap any photo to open a bigger gallery view.</p>
+
+    <div class="filter-bar">
+      <input type="search" id="search-input" placeholder="Search by name or item number (e.g. VZD-WB-001)">
+      <select id="category-select" aria-label="Filter by category"></select>
+      <span class="results-count" id="results-count"></span>
+    </div>
+
+    <div class="product-grid" id="product-grid"></div>
+
+    <div class="load-more-wrap" id="load-more-wrap">
+      <button class="btn btn-primary" id="load-more-btn">Load more items</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <span>© <span id="year"></span> Vizdom Ceramics. All rights reserved.</span>
+    <span><a href="index.html">Home</a> · <a href="index.html#contact">Contact</a></span>
+  </div>
+</footer>
+
+<a href="#" data-wa-generic target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-img" src="" alt="Product photo">
+    <div class="lightbox-controls">
+      <button onclick="stepLightbox(-1)">&#8249; Prev</button>
+      <span id="lightbox-title"></span>
+      <button onclick="stepLightbox(1)">Next &#8250;</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/whatsapp-config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

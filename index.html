@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vizdom Ceramics — Sanitary Ware & Bathroom Fittings</title>
+<meta name="description" content="Vizdom Ceramics — wash basins, water closets, bathtubs, faucets and more. Browse 100+ sanitary ware items and inquire directly on WhatsApp.">
+<link rel="icon" href="images/logoo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Vizdom Ceramics" class="brand-logo">
+      <span class="brand-name sr-only">Vizdom Ceramics</span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalog.html">Full Catalog</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#location">Location</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#" data-wa-generic target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ---------------- HERO ---------------- -->
+  <section class="hero container">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Sanitary Ware &amp; Bathroom Fittings</p>
+        <h1>Ceramics built for the room you rebuild once and use every day.</h1>
+        <p class="lede">Vizdom Ceramics stocks 100+ basins, water closets, bathtubs, faucets and fittings — browse the full range and get a straight answer from us on WhatsApp, no showroom visit required.</p>
+        <div class="hero-actions">
+          <a href="catalog.html" class="btn btn-primary">Browse full catalog</a>
+          <a href="#" data-wa-generic target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="arch-frame">
+        <img src="images/hero/hero-main.jpg" alt="Vizdom Ceramics showroom basin display" onerror="onImgError(this)">
+        <div class="arch-stat">100+ items in stock</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="arch-divider"><span></span><span></span><span></span></div>
+
+  <!-- ---------------- CATEGORIES ---------------- -->
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Shop by category</p>
+        <h2>Find your fitting</h2>
+      </div>
+    </div>
+    <div class="cat-strip" id="category-strip"></div>
+  </section>
+
+  <!-- ---------------- FEATURED PRODUCTS, GROUPED BY CATEGORY ---------------- -->
+  <section class="section container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">A glimpse of the range</p>
+        <h2>Browse by category</h2>
+        <p>Every item ships with 2–3 real photos — hover a photo to see it installed.</p>
+      </div>
+      <a href="catalog.html" class="btn btn-outline">See all 100+ items</a>
+    </div>
+    <div id="categorized-products"></div>
+  </section>
+
+  <div class="arch-divider"><span></span><span></span><span></span></div>
+
+  <!-- ---------------- ABOUT ---------------- -->
+  <section class="section container" id="about">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>Why Vizdom Ceramics</h2>
+        <p style="max-width:60ch">We supply retailers, contractors and homeowners with vitreous china and fittings that hold their glaze and their fit. Every item on this site is something we actually carry — reach out on WhatsApp with the item number and we'll confirm stock the same day.</p>
+      </div>
+    </div>
+    <div class="trust-strip">
+      <div><strong>100+</strong><span>Items in catalog</span></div>
+      <div><strong>9</strong><span>Product categories</span></div>
+      <div><strong>2–3</strong><span>Photos per item</span></div>
+      <div><strong>1</strong><span>WhatsApp reply away</span></div>
+    </div>
+  </section>
+
+  <div class="arch-divider"><span></span><span></span><span></span></div>
+
+  <!-- ---------------- LOCATION ---------------- -->
+  <section class="section container" id="location">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Our Showroom Location</h2>
+        <p style="max-width:60ch">Prefer to see the pieces in person? Drop by our showroom — tap the map or the button below to start navigation straight from your phone.</p>
+      </div>
+    </div>
+    <div class="location-panel">
+      <div class="map-embed" style="border-radius:12px; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+        <iframe
+          src="https://www.google.com/maps?q=Vizdom+Ceramics,31.4894238,74.3795957&hl=en&z=17&output=embed"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Vizdom Ceramics showroom location">
+        </iframe>
+      </div>
+      <div class="hero-actions" style="margin-top:1.25rem;">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=31.4894238,74.3795957" target="_blank" rel="noopener" class="btn btn-primary">📍 Get Directions</a>
+        <a href="https://maps.app.goo.gl/TPBGsSjiQrX5pxgP9" target="_blank" rel="noopener" class="btn btn-outline">View on Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------------- CONTACT ---------------- -->
+  <section class="section container" id="contact">
+    <div class="contact-panel">
+      <div>
+        <h2>Have an item number in mind?</h2>
+        <p>Message us the item number and quantity — we'll send price and availability directly on WhatsApp.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="#" data-wa-generic target="_blank" rel="noopener" class="btn btn-whatsapp">💬 Message us now</a>
+        <a href="catalog.html" class="btn btn-outline">Browse catalog</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <span>© <span id="year"></span> Vizdom Ceramics. All rights reserved.</span>
+    <span><a href="catalog.html">Full Catalog</a> · <a href="#contact">Contact</a></span>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button, visible on every scroll position -->
+<a href="#" data-wa-generic target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- ---------------- LIGHTBOX (shared) ---------------- -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <div class="lightbox-inner">
+    <img id="lightbox-img" src="" alt="Product photo">
+    <div class="lightbox-controls">
+      <button onclick="stepLightbox(-1)">&#8249; Prev</button>
+      <span id="lightbox-title"></span>
+      <button onclick="stepLightbox(1)">Next &#8250;</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/whatsapp-config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
